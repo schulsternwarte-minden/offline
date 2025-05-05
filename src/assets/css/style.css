@@ -1,0 +1,100 @@
+/* Modern CSS Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+}
+
+:root {
+    --space-1: #050A26;
+    --space-2: #081040;
+    --space-3: #101F73;
+    --space-4: #1228A6;
+    --space-5: #D94A4A;
+    --space-6: white;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: var(--space-2);
+    color: var(--space-6);
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+header {
+    background-color: var(--space-6);
+    color: var(--space-2);
+    text-align: center;
+    padding: 0px 20px;
+}
+
+header img {
+    /* max-width: 150px; */
+    height: 200px;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+main img {
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+}
